@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 map</title>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <div id='map'></div>
+    
+        <div class="element-with-timer"> 
+            <ul>
+                <li>RED: cases > 1000000</li>
+                <li>Orange: cases > 100000</li>
+                <li>Yellow: cases > 10000</li>
+                <li>Green: cases < 10000</li>
+
+            </ul>
+      </div>
+</body>
+
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1Ijoic2h1YmhhbWphaW4yMiIsImEiOiJja3BsOHB0YWEwM2JlMm5yd3IyaG5mNmRrIn0.TrUTT318vRWq1-SKrFRRnw';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/dark-v10',
+    zoom: 1,
+    center:[0,20]
+  });
+
+
+</script>
+
+<script src="index.js"></script>
+</html>

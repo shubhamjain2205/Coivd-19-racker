@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding: 0;
+}
+#map{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+  .element-with-timer {
+    display: flex;
+    position: absolute;
+    z-index: 5;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 5px;
+ 
+  }
+
+.element-with-timer::before{
+    filter: blur(5px);
+    /* position: inherit; */
+}
+
+  .element-with-timer ul {
+    display: block;
+
+    list-style: none;
+  }
+
+.element-with-timer ul li{
+    padding: 10px;
+}
